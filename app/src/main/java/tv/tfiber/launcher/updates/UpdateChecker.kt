@@ -15,7 +15,7 @@ import java.io.IOException
 class UpdateChecker(private val context: Context) {
     private val client = OkHttpClient()
     private val updateUrl =
-        "https://surekha-55.github.io/TfiberLauncher-Updates_Q200/update.json" // Corrected URL
+        "https://github.com/cityomesh/Q200_Sangupeta_Project/update.json" // Corrected URL
 
     suspend fun checkForUpdates(): UpdateInfo? = withContext(Dispatchers.IO) {
         Log.d("UpdateChecker", "checkForUpdates() started")
